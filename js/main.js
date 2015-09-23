@@ -51,7 +51,7 @@ $(function() {
         }, 1300);
         
         $('.total-number-3').animateNumber({
-            number: 350, //change value here
+            number: 1869, //change value here
             numberStep: comma_separator_number_step
         }, 2000);
         
