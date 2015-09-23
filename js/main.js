@@ -48,7 +48,7 @@ $(function() {
         $('.total-number-2').animateNumber({
             number: 5, //change value here
             numberStep: comma_separator_number_step
-        }, 2000);
+        }, 1300);
         
         $('.total-number-3').animateNumber({
             number: 350, //change value here
