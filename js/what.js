@@ -14,7 +14,7 @@
 		        }
 		    });
 				    
-		    clock.setTime(220880);
+		    clock.setTime(5984940);
 		    clock.setCountdown(true);
 		    clock.start();
 
