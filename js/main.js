@@ -46,12 +46,12 @@ $(function() {
         }, 2000);
         
         $('.total-number-2').animateNumber({
-            number: 100, //change value here
+            number: 5, //change value here
             numberStep: comma_separator_number_step
         }, 2000);
         
         $('.total-number-3').animateNumber({
-            number: 1200, //change value here
+            number: 350, //change value here
             numberStep: comma_separator_number_step
         }, 2000);
         
