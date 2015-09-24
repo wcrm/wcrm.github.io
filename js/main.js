@@ -117,9 +117,9 @@ $(function() {
     $('.review-slider').slick({
         dots: true,
         arrows: false,
-        infinite: false,
+        infinite: true,
         autoplay: true,
-        autoplaySpeed: 8000,
+        autoplaySpeed: 11000,
         pauseOnHover: false
     });
 
