@@ -498,17 +498,19 @@ p {
 .intro-heading {
   font-size: 28px;
   margin-bottom: 40px;
+  color:white;
 }
 
 .heading-frame {
   padding: 38px 50px;
-  border: 5px solid #333333;
+  border: 5px solid white;
   display: inline-block;
 }
 
 .intro-text {
   font-size: 17px;
   line-height: 32px;
+  color:white;
 }
 
 
@@ -2748,6 +2750,25 @@ input.searchbox:focus {
   padding: 0 40px 50px 40px;
 }
 
+.cold-formula {
+  background-color: #000000;
+  padding: 45px 30px;
+}
+
+.cold-ss-formula {
+  background-color: #00247d;
+  padding: 45px 30px;
+}
+
+.warm-formula {
+  background-color: #850303;
+  padding: 45px 30px;
+}
+
+.warm-ss-formula {
+  background-color: #ce0000;
+  padding: 45px 30px;
+}
 
 /* Fun Facts style-2
 -------------------------------------------------------*/
@@ -3692,7 +3713,8 @@ ol.numbers {
 -------------------------------------------------------*/
 
 .section-wrap.intro {
-  padding: 170px 0 150px;
+  padding: 90px 0 0 0;
+  background-color: black;
 }
 
 .intro.style-2 .intro-text p {
