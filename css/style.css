@@ -32,7 +32,7 @@
 
 .oh { overflow: hidden; }
 .relative { position: relative; }
-.section-wrap, .section-wrap-mp { padding: 150px 0; overflow: hidden; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center center; background-repeat: no-repeat; }
+.section-wrap, .section-wrap-mp { padding: 50px 0; overflow: hidden; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center center; background-repeat: no-repeat; }
 .color-white { color: #fff !important; }
 .left { float: left; }
 .right { float: right; }
