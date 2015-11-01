@@ -222,7 +222,7 @@ p {
 }
 
 .navigation-overlay {
-  background-color: rgba(17,17,17,.5);
+  background-color: rgba(255,255,255,.5);
   width: 100%;
   line-height: 0;
   -webkit-transition: all 0.3s ease-in-out;
@@ -233,7 +233,7 @@ p {
 }
 
 .navigation-overlay.sticky {
-  background-color: rgba(17,17,17,1);
+  background-color: rgba(255,255,255,1);
   visibility: visible;
   opacity: 1;
 }
@@ -267,7 +267,7 @@ p {
   text-transform: uppercase;
   padding: 0 20px;
   line-height: 90px;
-  color: #fff;
+  color: ;
   font-size: 13px;
   letter-spacing: 0.02em;
   font-weight: bold;
