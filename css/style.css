@@ -3841,6 +3841,9 @@ ol.numbers {
   border-style: none;
   font-size: 100px;
   text-transform: none;
+  position: absolute;
+  right: 3%;
+  top: 75%;
 }
 
 
