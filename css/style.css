@@ -267,7 +267,7 @@ p {
   text-transform: uppercase;
   padding: 0 20px;
   line-height: 90px;
-  color: ;
+  color: black ;
   font-size: 13px;
   letter-spacing: 0.02em;
   font-weight: bold;
@@ -343,7 +343,7 @@ p {
 .navbar-nav > .active > a:hover,
 .menu-socials li > a:hover {
   opacity: 1;
-  color: #bfa67a !important;
+  color: black !important;
 }
 
 .menu-socials li > a:hover {
