@@ -1237,36 +1237,20 @@
 		      $(".player").YTPlayer();
 		    });
 	    </script>
-	    <script src="https://checkout.stripe.com/checkout.js"></script>
+	    
 
-<button id="customButton">Purchase</button>
+	    <?php require_once('./config.php'); ?>
+ 
+<form action="charge.php" method="post">
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<?php echo $stripe['publishable_key']; ?>"
+          data-description="Access for a year"
+          data-amount="5000"
+          data-locale="auto"></script>
+</form>
 
-<script>
-  var handler = StripeCheckout.configure({
-    key: 'pk_test_ALTGNanqExKCv0x19FP1nXwn',
-    image: '/img/documentation/checkout/marketplace.png',
-    locale: 'auto',
-    token: function(token) {
-      // Use the token to create the charge with a server-side script.
-      // You can access the token ID with `token.id`
-    }
-  });
 
-  $('#customButton').on('click', function(e) {
-    // Open Checkout with further options
-    handler.open({
-      name: 'Demo Site',
-      description: '2 widgets',
-      amount: 2000
-    });
-    e.preventDefault();
-  });
 
-  // Close Checkout on page navigation
-  $(window).on('popstate', function() {
-    handler.close();
-  });
-</script>
 
 
 
