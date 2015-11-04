@@ -7,7 +7,7 @@
  
   $customer = \Stripe\Customer::create(array(
       'email' => 'customer@example.com',
-      'card'  => $token
+      'source'  => $token
   ));
  
   $charge = \Stripe\Charge::create(array(

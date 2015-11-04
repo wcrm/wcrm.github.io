@@ -200,9 +200,24 @@
 								</div>
 
 								<div class="pricing-button">
-									<a href="#">
+
+
+	    <?php require_once('./config.php'); ?>
+ 
+<form action="charge.php" method="post">
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+         data-key="<pk_test_PINRzPvBXGYVB2Pe2WBl8yjB>"
+          data-description="Access for a year"
+          data-amount="5000"
+          data-locale="auto"></script>
+</form>
+
+
+
+								
+									<!-- <a href="#">
 										<div class="btn btn-lg btn-color" id="customButton">Purchase Now</div>
-									</a>
+									</a> -->
 								</div>
 							</div>
 						</div> <!-- end col -->
@@ -1238,17 +1253,6 @@
 		    });
 	    </script>
 	    
-
-	    <?php require_once('./config.php'); ?>
- 
-<form action="charge.php" method="post">
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<?php echo $stripe['publishable_key']; ?>"
-          data-description="Access for a year"
-          data-amount="5000"
-          data-locale="auto"></script>
-</form>
-
 
 
 
