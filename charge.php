@@ -1,7 +1,8 @@
 <?php
-  require_once('./stripe-php/init.php');
-  require_once('./config.php');
  
+  require_once('./config.php');
+  require_once('./stripe-php/init.php');
+
   $token  = $_POST['stripeToken'];
  
   $customer = \Stripe\Customer::create(array(

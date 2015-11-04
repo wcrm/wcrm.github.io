@@ -1,8 +1,8 @@
 <?php
 
 $stripe = array(
-  "secret_key"      => "sk_test_q7ZfBTEVlYiHmyXBrBqjPkzp",
-  "publishable_key" => "pk_test_ALTGNanqExKCv0x19FP1nXwn"
+  "secret_key"      => "sk_test_nzLEJuOBlN8uiPYG3bWrswoJ",
+  "publishable_key" => "pk_test_PINRzPvBXGYVB2Pe2WBl8yjB"
 );
 
 \Stripe\Stripe::setApiKey($stripe['secret_key']);
