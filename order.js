@@ -9,5 +9,18 @@ var handler = StripeCheckout.configure({
 });
 
 $('#customButton').on('click', function (e) {
-   alert("whatup")
+    var amount = $("#amount").val() * 100;
+    var displayAmount = parseFloat(Math.floor($("#amount").val() * 100) / 100);
+    // Open Checkout with further options
+    handler.open({
+        name: 'DaHui Wax',
+        description: 'Custom amount ' + displayAmount + ' bars',
+        amount: amount * 2.5
+    });
+    e.preventDefault();
+});
+
+// Close Checkout on page navigation
+$(window).on('popstate', function () {
+    handler.close();
 });
