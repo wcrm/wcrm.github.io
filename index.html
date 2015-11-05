@@ -37,8 +37,10 @@
 
 
 		<!-- Checkout.JS -->
-		<script src="https://checkout.stripe.com/checkout.js"></script>
+		<!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
 
+		<script src="https://checkout.stripe.com/checkout.js"></script>
+		<script src="order.js"></script>
 
 	</head>
 
@@ -207,9 +209,10 @@
 								<div class="pricing-button">
 
 
-			
 
-<form id="myForm" action="XXXXXX" method="POST">
+<!--STRIPE FORM-->
+
+			<form id="myForm" action="charge.php" method="POST">
     <input type="text" id="amount" name="amount" />
     <input type="hidden" id="stripeToken" name="stripeToken" />
     <input type="hidden" id="stripeEmail" name="stripeEmail" />
@@ -217,8 +220,7 @@
 
 <input type="button" id="customButton" value="Order">
 
-<script>
-
+<script type="text/jQuery">
 var handler = StripeCheckout.configure({
     key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
     image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
@@ -247,6 +249,10 @@ $(window).on('popstate', function () {
 });
 
 </script>
+
+
+
+
 
 
 
