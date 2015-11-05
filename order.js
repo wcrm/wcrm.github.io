@@ -1,5 +1,5 @@
 var handler = StripeCheckout.configure({
-    key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+    key: 'pk_test_PINRzPvBXGYVB2Pe2WBl8yjB',
     image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
     token: function (token) {
         $("#stripeToken").val(token.id);

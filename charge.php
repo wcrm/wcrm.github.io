@@ -4,6 +4,8 @@
   require_once('./stripe-php/init.php');
 
   $token  = $_POST['stripeToken'];
+
+  $chargeAmount = $_POST['amount'] * 250;
  
   $customer = \Stripe\Customer::create(array(
       'email' => 'customer@example.com',
@@ -12,9 +14,9 @@
  
   $charge = \Stripe\Charge::create(array(
       'customer' => $customer->id,
-      'amount'   => 5000,
+      'amount'   => $chargeAmount,
       'currency' => 'usd'
   ));
  
-  echo '<h1>Successfully charged $50.00!</h1>';
+  echo '<h1>Successfully charged! Please hit back.</h1>';
 ?>
